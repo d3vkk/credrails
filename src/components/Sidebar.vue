@@ -4,7 +4,7 @@
     class="py-4 shadow-md flex-col flex items-between justify-between"
   >
     <div>
-      <div class="sidebar-img rounded-full p-1 px-6">
+      <div class="sidebar-img rounded-full px-6 mx-4">
         <img src="/img/credrails-logo.png" alt="Credrails Logo" />
       </div>
       <ul class="py-4">
