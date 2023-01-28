@@ -78,7 +78,6 @@ export default defineComponent({
 }
 .profile-title {
   font-weight: 300;
-  /* @apply */
 }
 .profile-last-details div {
   @apply mr-4;
