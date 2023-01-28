@@ -1,0 +1,90 @@
+<template>
+  <div id="sidebar" class="py-4 shadow-md">
+    <div class="sidebar-img rounded-full p-1 px-6">
+      <img src="/img/credrails-logo.png" alt="Credrails Logo" />
+    </div>
+    <ul class="py-4">
+      <li>
+        <div v-html="iconGridView"></div>
+        <div>Dashboard</div>
+      </li>
+      <li class="highlight">
+        <div v-html="iconGroups"></div>
+        <div>Customers</div>
+      </li>
+      <li>
+        <div v-html="iconReport"></div>
+        <div>Reports</div>
+      </li>
+      <li>
+        <div v-html="iconSettings"></div>
+        <div>Settings</div>
+      </li>
+    </ul>
+    <div class="pb-64"></div>
+    <div class="px-6"><hr /></div>
+    <div class="px-6">
+      <div
+        class="btn-logout mt-6 justify-center px-2 py-2 bg-red-100 text-red-700 shadow-md rounded-md"
+      >
+        <div>Logout</div>
+        <span v-html="iconLogout"></span>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import {
+  iconGridView,
+  iconGroups,
+  iconReport,
+  iconSettings,
+  iconLogout,
+} from "../utils/icons";
+
+export default defineComponent({
+  setup() {
+    return {
+      iconGridView,
+      iconGroups,
+      iconReport,
+      iconSettings,
+      iconLogout,
+    };
+  },
+});
+</script>
+
+<style scoped>
+#sidebar {
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: var(--font-medium);
+}
+
+.highlight {
+  background-color: var(--secondary);
+}
+.sidebar-img {
+  background-color: var(--white);
+}
+
+li,
+.btn-logout {
+  @apply flex flex-row;
+  cursor: pointer;
+}
+
+.btn-logout {
+}
+
+li {
+  @apply py-4 px-6;
+}
+li div:first-child,
+.btn-logout div:first-child {
+  @apply mr-2;
+}
+</style>

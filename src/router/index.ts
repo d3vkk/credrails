@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import LandingPage from "../views/LandingPage.vue";
+import Dashboard from "../views/Dashboard.vue";
 
-const routes: Array<RouteRecordRaw> = [{ path: "/", component: LandingPage }];
+const routes: Array<RouteRecordRaw> = [{ path: "/", component: Dashboard }];
 const router = createRouter({
   history: createWebHistory(),
   routes,

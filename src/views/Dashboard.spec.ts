@@ -1,11 +1,11 @@
 import { mount } from "@vue/test-utils";
-import LandingPage from "../../views/LandingPage.vue";
+import Dashboard from "./Dashboard.vue";
 import { expect, test } from "vitest";
 
 test("mount component", async () => {
-  expect(LandingPage).toBeTruthy();
+  expect(Dashboard).toBeTruthy();
 
-  const wrapper = mount(LandingPage, {
+  const wrapper = mount(Dashboard, {
     props: {
       title: "Vue3 Typescript Tailwind Starter",
     },
