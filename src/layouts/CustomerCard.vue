@@ -10,7 +10,7 @@
         <div class="card-details-title">{{ body.title }}</div>
         <div class="font-bold">{{ body.body }}</div>
       </li>
-      <Rangebar :maxNum="rangeList!.max" :minNum="rangeList!.min" />
+      <Rangebar v-if="rangeList" :maxNum="rangeList!.max" :minNum="rangeList!.min" />
     </ul>
   </div>
 </template>
