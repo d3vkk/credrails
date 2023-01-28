@@ -12,29 +12,14 @@
 import { defineComponent } from "vue";
 import CustomerCard from "../layouts/CustomerCard.vue";
 import loanAffordability from "../utils/loanAffordability";
-import CustomerCardDetails from "../types/CustomerCardDetails";
 import RangeList from "../types/RangeList";
+import { loanArr } from "../utils/customerCardData";
 
 export default defineComponent({
   components: {
     CustomerCard,
   },
   setup() {
-    const loanArr: Array<CustomerCardDetails> = [
-      {
-        title: "Qualifies For Loan",
-        body: loanAffordability.loanQualification ? "Yes" : "No",
-      },
-      {
-        title: "Recommended Loan Amount",
-        body: `₦${loanAffordability.loanAmount.toLocaleString()}`,
-      },
-      {
-        title: "Loan Repayment Probability",
-        body: `${loanAffordability.repaymentProbability}%`,
-      },
-    ];
-
     const rangeList: RangeList = {
       max: loanAffordability.loanAmountRange.max,
       min: loanAffordability.loanAmountRange.min,

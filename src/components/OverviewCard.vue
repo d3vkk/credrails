@@ -20,66 +20,10 @@
 
 <script lang="ts">
 import { defineComponent} from "vue";
-import OverviewSubCard from "../layouts/OverviewSubCard.vue";
-import customerOverview from "../utils/customerOverview";
-import CustomerCardDetails from "../types/CustomerCardDetails";
+import { overviewArr } from "../utils/customerCardData";
 
 export default defineComponent({
-  components: {
-    OverviewSubCard,
-  },
   setup() {
-    const overviewArr: Array<CustomerCardDetails> = [
-      {
-        title: "Total Inflow (Cr)",
-        body: `₦${customerOverview.totalInflow.toLocaleString()}`,
-      },
-      {
-        title: "Total Outflow (Dr)",
-        body: `₦${customerOverview.totalOutflow.toLocaleString()}`,
-      },
-      {
-        title: "Closing Balance",
-        body: `₦${customerOverview.closingBalance.toLocaleString()}`,
-      },
-      {
-        title: "Average Balance",
-        body: `₦${customerOverview.averageBalance.toLocaleString()}`,
-      },
-      {
-        title: "Total Income",
-        body: `₦${customerOverview.totalIncome.toLocaleString()}`,
-      },
-      {
-        title: "Total Expenses",
-        body: `₦${customerOverview.totalExpenses.toLocaleString()}`,
-      },
-      {
-        title: "Net Income",
-        body: `₦${customerOverview.netIncome.toLocaleString()}`,
-      },
-      {
-        title: "Recurring Expenses",
-        body: `₦${customerOverview.recurringExpenses.toLocaleString()}`,
-      },
-      {
-        title: "Sweep rate",
-        body: `₦${customerOverview.sweepRate.toLocaleString()}`,
-      },
-      {
-        title: "Debt/Income Ratio",
-        body: `₦${customerOverview.debtIncomeRatio.toLocaleString()}`,
-      },
-      {
-        title: "Gambling Rate",
-        body: `₦${customerOverview.gamblingRate.toLocaleString()}`,
-      },
-      {
-        title: "Savings Rate",
-        body: `₦${customerOverview.savingsRate.toLocaleString()}`,
-      },
-    ];
-
     return {
       overviewArr,
     };
