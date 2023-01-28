@@ -1,7 +1,7 @@
 <template>
   <div
     id="sidebar"
-    class="py-4 shadow-md flex-col flex items-between justify-between"
+    class="py-4 shadow-md flex-col lg:flex items-between justify-between hidden md:hidden"
   >
     <div>
       <div class="sidebar-img rounded-full px-6 mx-4">

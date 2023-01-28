@@ -1,15 +1,15 @@
 <template>
   <div id="dashboard" class="flex flex-row">
-    <div class="w-1/6">
+    <div class="lg:w-1/6">
       <Sidebar />
     </div>
-    <ul class="w-5/6 px-6">
+    <ul class="lg:w-5/6 px-6">
       <li><Navbar /></li>
       <li><ProfileCard /></li>
       <li><SubNavbar /></li>
       <li>
-        <ul class="customercards flex flex-col md:flex-row lg:flex-row">
-          <li class="mr-6"><LoanCard /></li>
+        <ul class="customercards flex flex-col md:flex-col items-center lg:flex-row">
+          <li class="lg:mr-6"><LoanCard /></li>
           <li><BehaviourCard/></li>
         </ul>
         <div><OverviewCard/></div>
@@ -50,7 +50,15 @@ li {
   @apply my-6;
 }
 
+.customercards{
+  @apply md:my-6
+}
+
 .customercards li {
-  width: 50%;
+  @apply lg:my-6 md:my-0 my-0 lg:w-1/2 md:w-3/4 w-full lg:mb-0 mb-6 ;
+
+}
+.customercards li:first-child {
+  @apply lg:mb-0 md:mb-6;
 }
 </style>

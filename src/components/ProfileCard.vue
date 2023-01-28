@@ -1,11 +1,11 @@
 <template>
-  <div id="profile-card" class="bg-white flex flex-row justify-between p-6">
-    <div class="flex flex-col">
+  <div id="profile-card" class="bg-white flex lg:flex-row md:flex-row flex-col justify-between p-6">
+    <div class="flex flex-col mb-4 mr-0 lg:mr-4 md:mr-4 lg:mb-0 md:mb-0">
       <div class="profile-title">Name</div>
       <div class="profile-details">{{ profileData.name }}</div>
     </div>
-    <div class="profile-last-details flex flex-row justify-around">
-      <div class="flex flex-col">
+    <div class="profile-last-details flex lg:flex-row md:flex-row flex-col justify-around">
+      <section class="flex flex-col">
         <div class="profile-title">Phone number</div>
         <div class="profile-details">
           +{{
@@ -15,15 +15,15 @@
             )
           }}
         </div>
-      </div>
-      <div class="flex flex-col">
+      </section>
+      <section class="flex flex-col">
         <div class="profile-title">Date Added</div>
         <div class="profile-details">{{ profileDates.dateAdded }}</div>
-      </div>
-      <div class="flex flex-col">
+      </section>
+      <section class="flex flex-col">
         <div class="profile-title">Last Updated</div>
         <div class="profile-details">{{ profileDates.lastUpdated }}</div>
-      </div>
+      </section>
     </div>
   </div>
 </template>
@@ -86,8 +86,8 @@ export default defineComponent({
 .profile-title {
   font-weight: 300;
 }
-.profile-last-details div {
-  @apply mr-4;
+.profile-last-details section {
+  @apply mb-4 mr-0 lg:mr-4 md:mr-4 lg:mb-0 md:mb-0;
 }
 .profile-details {
   @apply font-bold;
