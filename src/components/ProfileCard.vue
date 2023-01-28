@@ -1,10 +1,10 @@
 <template>
-  <div id="profile-card" class="bg-white flex lg:flex-row md:flex-row flex-col justify-between p-6">
-    <div class="flex flex-col mb-4 mr-0 lg:mr-4 md:mr-4 lg:mb-0 md:mb-0">
+  <div id="profile-card" class="bg-white flex lg:flex-row md:flex-col flex-col justify-between p-6">
+    <div class="flex flex-col mb-4 mr-0 lg:mr-4 md:mr-0 lg:mb-0 md:mb-4">
       <div class="profile-title">Name</div>
       <div class="profile-details">{{ profileData.name }}</div>
     </div>
-    <div class="profile-last-details flex lg:flex-row md:flex-row flex-col justify-around">
+    <div class="profile-last-details flex lg:flex-row md:flex-col flex-col justify-around">
       <section class="flex flex-col">
         <div class="profile-title">Phone number</div>
         <div class="profile-details">
@@ -87,7 +87,7 @@ export default defineComponent({
   font-weight: 300;
 }
 .profile-last-details section {
-  @apply mb-4 mr-0 lg:mr-4 md:mr-4 lg:mb-0 md:mb-0;
+  @apply mb-4 mr-0 lg:mr-4 md:mr-0 lg:mb-0 md:mb-4;
 }
 .profile-details {
   @apply font-bold;
