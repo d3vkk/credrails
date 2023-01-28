@@ -1,6 +1,6 @@
 type CustomerCardDetails = {
   title: string;
-  body: any;
+  body: string;
 };
 
 export default CustomerCardDetails;
