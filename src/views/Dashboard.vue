@@ -7,7 +7,12 @@
       <li><Navbar /></li>
       <li><ProfileCard /></li>
       <li><SubNavbar /></li>
-      <li><LoanCard /></li>
+      <li>
+        <ul class="customercards flex flex-col md:flex-row lg:flex-row">
+          <li class="mr-6"><LoanCard /></li>
+          <li><BehaviourCard/></li>
+        </ul>
+      </li>
     </ul>
   </div>
 </template>
@@ -19,6 +24,7 @@ import Sidebar from "../components/Sidebar.vue";
 import ProfileCard from "../components/ProfileCard.vue";
 import SubNavbar from "../components/SubNavbar.vue";
 import LoanCard from "../components/LoanCard.vue";
+import BehaviourCard from "../components/BehaviourCard.vue";
 
 export default defineComponent({
   components: {
@@ -27,6 +33,7 @@ export default defineComponent({
     ProfileCard,
     SubNavbar,
     LoanCard,
+    BehaviourCard,
   },
 });
 </script>
@@ -38,5 +45,9 @@ export default defineComponent({
 
 li {
   @apply my-6;
+}
+
+.customercards li {
+  width: 50%;
 }
 </style>

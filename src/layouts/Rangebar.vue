@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-10">
+  <div class="pt-8">
     <div class="slider">
       <input
         type="range"

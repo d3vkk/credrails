@@ -1,5 +1,5 @@
 <template>
-  <div class="w-1/2">
+  <div>
     <CustomerCard
       :cardTitle="'Loan affordability'"
       :cardList="loanArr"
@@ -40,7 +40,6 @@ export default defineComponent({
       min: loanAffordability.loanAmountRange.min,
     };
     return {
-      loanAffordability,
       loanArr,
       rangeList,
     };
