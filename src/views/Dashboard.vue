@@ -7,6 +7,7 @@
       <li><Navbar /></li>
       <li><ProfileCard /></li>
       <li><SubNavbar /></li>
+      <li><LoanCard /></li>
     </ul>
   </div>
 </template>
@@ -17,6 +18,7 @@ import Navbar from "../components/Navbar.vue";
 import Sidebar from "../components/Sidebar.vue";
 import ProfileCard from "../components/ProfileCard.vue";
 import SubNavbar from "../components/SubNavbar.vue";
+import LoanCard from "../components/LoanCard.vue";
 
 export default defineComponent({
   components: {
@@ -24,13 +26,14 @@ export default defineComponent({
     Sidebar,
     ProfileCard,
     SubNavbar,
+    LoanCard,
   },
 });
 </script>
 
 <style scoped>
-#dashboard{
-  background-color: #F9FBFC;
+#dashboard {
+  background-color: #f9fbfc;
 }
 
 li {
