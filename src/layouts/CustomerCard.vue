@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white shadow rounded-md">
-    <div class="card-title font-bold px-6 pb-6 pt-4">{{ cardTitle }}</div>
+    <div class="card-title font-bold px-6 py-4">{{ cardTitle }}</div>
     <ul class="card-body px-6 pt-2 pb-12">
       <li
         class="py-3 flex flex-row justify-between"
