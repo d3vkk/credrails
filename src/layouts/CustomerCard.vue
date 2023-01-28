@@ -41,7 +41,6 @@ export default defineComponent({
 
 <style scoped>
 .card-title {
-  color: var(--primary);
   border-bottom: 2px solid var(--gray-100);
 }
 
