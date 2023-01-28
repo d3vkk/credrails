@@ -12,6 +12,7 @@
           <li class="mr-6"><LoanCard /></li>
           <li><BehaviourCard/></li>
         </ul>
+        <div><OverviewCard/></div>
       </li>
     </ul>
   </div>
@@ -25,6 +26,7 @@ import ProfileCard from "../components/ProfileCard.vue";
 import SubNavbar from "../components/SubNavbar.vue";
 import LoanCard from "../components/LoanCard.vue";
 import BehaviourCard from "../components/BehaviourCard.vue";
+import OverviewCard from "../components/OverviewCard.vue";
 
 export default defineComponent({
   components: {
@@ -34,6 +36,7 @@ export default defineComponent({
     SubNavbar,
     LoanCard,
     BehaviourCard,
+    OverviewCard,
   },
 });
 </script>
