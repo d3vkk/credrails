@@ -1,34 +1,40 @@
 <template>
-  <div id="sidebar" class="py-4 shadow-md">
-    <div class="sidebar-img rounded-full p-1 px-6">
-      <img src="/img/credrails-logo.png" alt="Credrails Logo" />
+  <div
+    id="sidebar"
+    class="py-4 shadow-md flex-col flex items-between justify-between"
+  >
+    <div>
+      <div class="sidebar-img rounded-full p-1 px-6">
+        <img src="/img/credrails-logo.png" alt="Credrails Logo" />
+      </div>
+      <ul class="py-4">
+        <li>
+          <div v-html="iconGridView"></div>
+          <div>Dashboard</div>
+        </li>
+        <li class="highlight">
+          <div v-html="iconGroups"></div>
+          <div>Customers</div>
+        </li>
+        <li>
+          <div v-html="iconReport"></div>
+          <div>Reports</div>
+        </li>
+        <li>
+          <div v-html="iconSettings"></div>
+          <div>Settings</div>
+        </li>
+      </ul>
     </div>
-    <ul class="py-4">
-      <li>
-        <div v-html="iconGridView"></div>
-        <div>Dashboard</div>
-      </li>
-      <li class="highlight">
-        <div v-html="iconGroups"></div>
-        <div>Customers</div>
-      </li>
-      <li>
-        <div v-html="iconReport"></div>
-        <div>Reports</div>
-      </li>
-      <li>
-        <div v-html="iconSettings"></div>
-        <div>Settings</div>
-      </li>
-    </ul>
-    <div class="pb-64"></div>
-    <div class="px-6"><hr /></div>
-    <div class="px-6">
-      <div
-        class="btn-logout mt-6 justify-center px-2 py-2 bg-red-100 text-red-700 shadow-md rounded-md"
-      >
-        <div>Logout</div>
-        <span v-html="iconLogout"></span>
+    <div>
+      <div class="px-6"><hr /></div>
+      <div class="px-6">
+        <div
+          class="btn-logout mt-6 justify-center px-2 py-2 bg-red-100 text-red-700 shadow-md rounded-md"
+        >
+          <div>Logout</div>
+          <span v-html="iconLogout"></span>
+        </div>
       </div>
     </div>
   </div>
@@ -62,6 +68,7 @@ export default defineComponent({
   background-color: var(--primary);
   color: var(--white);
   font-size: var(--font-medium);
+  height: 100%;
 }
 
 .highlight {
