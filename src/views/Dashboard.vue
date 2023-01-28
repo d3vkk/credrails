@@ -6,6 +6,7 @@
     <ul class="w-5/6 px-6">
       <li><Navbar /></li>
       <li><ProfileCard /></li>
+      <li><SubNavbar /></li>
     </ul>
   </div>
 </template>
@@ -15,12 +16,14 @@ import { defineComponent } from "vue";
 import Navbar from "../components/Navbar.vue";
 import Sidebar from "../components/Sidebar.vue";
 import ProfileCard from "../components/ProfileCard.vue";
+import SubNavbar from "../components/SubNavbar.vue";
 
 export default defineComponent({
   components: {
     Navbar,
     Sidebar,
     ProfileCard,
+    SubNavbar,
   },
 });
 </script>
