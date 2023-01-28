@@ -14,11 +14,11 @@
     <div class="flex flex-row justify-between">
       <div>
         <div class="range-details-title">Min</div>
-        <div>₦{{ minNum }}</div>
+        <div>₦{{ minNum.toLocaleString() }}</div>
       </div>
       <div>
         <div class="range-details-title text-right">Max</div>
-        <div>₦{{ maxNum }}</div>
+        <div>₦{{ maxNum.toLocaleString() }}</div>
       </div>
     </div>
   </div>

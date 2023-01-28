@@ -27,7 +27,7 @@ export default defineComponent({
       },
       {
         title: "Recommended Loan Amount",
-        body: `₦${loanAffordability.loanAmount}`,
+        body: `₦${loanAffordability.loanAmount.toLocaleString()}`,
       },
       {
         title: "Loan Repayment Probability",
