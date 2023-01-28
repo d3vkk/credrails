@@ -7,7 +7,14 @@
     <div class="profile-last-details flex flex-row justify-around">
       <div class="flex flex-col">
         <div class="profile-title">Phone number</div>
-        <div class="profile-details">{{ profileData.phoneNumber }}</div>
+        <div class="profile-details">
+          +{{
+            profileData.phoneNumber.replace(
+              /\D*(\d{3})\D*(\d{4})\D*(\d{4})\D*/,
+              "$1 $2 $3"
+            )
+          }}
+        </div>
       </div>
       <div class="flex flex-col">
         <div class="profile-title">Date Added</div>
