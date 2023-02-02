@@ -2,7 +2,9 @@
 
 ![Credrails Customer Analysis Design](https://github.com/d3vkk/credrails/blob/master/public/img/credrails-customer-analytics.webp)
 
-[Credrails Customer Analysis Dashboard](https://credrails.netlify.app)
+Credrails Customer Analysis Dashboard
+
+[Website Link](https://credrails.netlify.app)
 
 ## Contribution
 
