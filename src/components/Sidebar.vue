@@ -105,4 +105,9 @@ a:hover {
   text-decoration: none;
   color: var(--secondary);
 }
+
+img {
+  height: 45px;
+  width: 145px;
+}
 </style>
