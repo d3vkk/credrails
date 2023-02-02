@@ -15,9 +15,9 @@
             <div
               class="font-bold"
               :class="{
-                'text-yellow-600': body.title === 'Sweep rate',
-                'text-red-600': body.title === 'Debt/Income Ratio',
-                'text-green-600': body.title === 'Gambling Rate',
+                'text-yellow-700': body.title === 'Sweep rate',
+                'text-red-700': body.title === 'Debt/Income Ratio',
+                'text-green-700': body.title === 'Gambling Rate',
               }"
             >
               {{ body.body }}
