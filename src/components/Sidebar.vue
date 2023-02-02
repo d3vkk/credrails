@@ -36,6 +36,9 @@
           <span v-html="iconLogout"></span>
         </div>
       </div>
+      <div class="text-center px-6 pt-3">
+        <a href="http://github.com/d3vkk/credrails">GitHub</a>
+      </div>
     </div>
   </div>
 </template>
@@ -93,5 +96,13 @@ li {
 li div:first-child,
 .btn-logout div:first-child {
   @apply mr-2;
+}
+
+a {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--secondary);
 }
 </style>
