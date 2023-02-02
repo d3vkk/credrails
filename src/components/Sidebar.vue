@@ -87,9 +87,6 @@ li,
   cursor: pointer;
 }
 
-.btn-logout {
-}
-
 li {
   @apply py-4 px-6;
 }
