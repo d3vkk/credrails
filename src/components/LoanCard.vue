@@ -11,9 +11,9 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import CustomerCard from "../layouts/CustomerCard.vue";
-import loanAffordability from "../utils/loanAffordability";
+import loanAffordability from "../data/loanAffordability";
 import RangeList from "../types/RangeList";
-import { loanArr } from "../utils/customerCardData";
+import { loanArr } from "../data/customerCardData";
 
 export default defineComponent({
   components: {

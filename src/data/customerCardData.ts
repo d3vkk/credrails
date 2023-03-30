@@ -1,6 +1,6 @@
-import loanAffordability from "../utils/loanAffordability";
-import customerBehaviour from "../utils/customerBehaviour";
-import customerOverview from "../utils/customerOverview";
+import loanAffordability from "../data/loanAffordability";
+import customerBehaviour from "../data/customerBehaviour";
+import customerOverview from "../data/customerOverview";
 import CustomerCardDetails from "../types/CustomerCardDetails";
 
 export const loanArr: Array<CustomerCardDetails> = [

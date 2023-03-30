@@ -1,4 +1,4 @@
-import { mount } from "@vue/test-utils";
+import { mount } from "@vue/test-data";
 import Dashboard from "./Dashboard.vue";
 import { expect, test } from "vitest";
 

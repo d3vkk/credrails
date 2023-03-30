@@ -31,7 +31,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { overviewArr } from "../utils/customerCardData";
+import { overviewArr } from "../data/customerCardData";
 
 export default defineComponent({
   setup() {

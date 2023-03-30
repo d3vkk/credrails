@@ -51,7 +51,7 @@ import {
   iconReport,
   iconSettings,
   iconLogout,
-} from "../utils/icons";
+} from "../data/icons";
 
 export default defineComponent({
   setup() {

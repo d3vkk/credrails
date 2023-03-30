@@ -31,7 +31,7 @@
 <script lang="ts">
 import { defineComponent, onMounted, ref } from "vue";
 import type { Ref } from "vue";
-import profileData from "../utils/profileData";
+import profileData from "../data/profileData";
 import ProfileDates from "../types/ProfileDates";
 
 export default defineComponent({

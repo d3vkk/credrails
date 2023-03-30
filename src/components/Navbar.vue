@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { iconArrowBack } from "../utils/icons";
+import { iconArrowBack } from "../data/icons";
 
 export default defineComponent({
   setup() {

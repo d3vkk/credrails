@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import subNavbarTitles from "../utils/subNavbarTitles";
+import subNavbarTitles from "../data/subNavbarTitles";
 
 export default defineComponent({
   setup() {
